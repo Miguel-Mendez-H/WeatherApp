@@ -39,10 +39,9 @@ function App() {
       getData()
     }
   }, [data])
-  console.log(data)
 
-  var weatherEstate = data?.weather[0].main
-    if (weatherEstate="Clouds"){ weatherEstate = "Nublado"}
+  let weatherEstate = data?.weather[0].main
+  if (weatherEstate==="Clouds") weatherEstate = "Nublado"
 
   return (
     <div className="card">
